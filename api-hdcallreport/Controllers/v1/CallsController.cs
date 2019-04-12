@@ -18,8 +18,6 @@ public class CallsController : ControllerBase
     {
         var query = _context.Calls.AsQueryable();
 
-        
-
         var allcalls = query
             .Where(c => c.OriginalCalledPartyNumber == "\"8300\"")
             .Where(c => c.Year == Year)
